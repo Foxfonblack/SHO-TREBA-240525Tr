@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+            integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>SHO-TREBA</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <button class="mobile-menu-button">
+                    <svg class="mobile-burger-menu-icon">
+                        <use href="./images/sprite.svg#icon-menu-mobile"></use>
+                    </svg>         
+                </button>
+                <a href="./index.html" class="">
+                    <svg class="icon-logo-sho">menu-item-link
+                        <use href="images/sprite.svg#icon--3"></use>
+                    </svg>
+                    
+                </a>
+                <nav class="navigation">
+                    <ul class="main-menu">
+                        <li class="menu-item dropdown"><span class="menu-item-link menu-item-link-span">ТОВАРИ</span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu-item"><a href="./cond.html" class="dropdown-menu-link">Кондиціонери</a></li>
+                                <li class="dropdown-menu-item"><a href="./conv.html" class="dropdown-menu-link">Конвектори</a></li>
+                                <li class="dropdown-menu-item"><a href="./electrostation.html" class="dropdown-menu-link">Зарядні станціі</a></li>
+                                <li class="dropdown-menu-item"><a href="./generator.html" class="dropdown-menu-link">Генератори</a></li>
+                                <li class="dropdown-menu-item"><a href="./boiler.html" class="dropdown-menu-link">Бойлери</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="./aboutPage.html">ПРО НАС</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="./contactPage.html">КОНТАКТИ</a>
+                        </li>
+                        <li class="menu-item">  
+                            <a class="menu-item-link" href="./paymentPage.html">ОПЛАТА ТА ДОСТАВКА</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="cart-button">
+                    <span class="cart-inner-counter">0</span>
+                    <svg class="cart-icon" width="24" , height="24">
+                        <use href="images/sprite.svg#icon-cart"></use>
+                    </svg>
+                </button>
+                <button type="button" class="contact-us">
+                    <svg class="contact-us-icon" width="32" , height="32">
+                        <use href="images/sprite.svg#icon-phone"></use>
+                    </svg>
+                </button>
+                <form class="contact-us-form">
+                    <div class="contact-form-inputs-wrapper">
+                        <div class="contact-us-input-wrapper">
+                            <input type="text" placeholder="Імʼя" name="name" class="contact-us-name-input">
+                            <p class="error-contact-us">* Обовʼязкове поле</p>
+                        </div>
+                        <div class="contact-us-input-wrapper">
+                            <input type="text" placeholder="Телефон" name="phone" class="contact-us-phone-input">
+                            <p class="error-contact-us">* Обовʼязкове поле</p>
+                        </div>
+                        <textarea class="contact-us-textarea" name="question" id="" placeholder="Ваше питання"></textarea>
+                    </div>
+                    <button class="contact-us-submite-btn disabled" type="submit">Передзвонити</button>
+                    <button type="button" class="contact-us-form-close-btn">&#x2717</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div class="mobile-menu-burger hidden">
+                <nav class="navigation-mobile">
+                    <h2 class="menu-title-mobile dropdown-mobile">ТОВАРИ</h2>
+                    <ul class="mobile-menu-list">     
+                                <li class="dropdown-menu-item-mobile"><a href="./cond.html" class="dropdown-menu-link-mobile">Кондиціонери</a></li>
+                                <li class="dropdown-menu-item-mobile"><a href="./conv.html" class="dropdown-menu-link-mobile">Конвектори</a></li>
+                                <li class="dropdown-menu-item-mobile"><a href="./electrostation.html" class="dropdown-menu-link-mobile">Зарядні станціі</a></li>
+                                <li class="dropdown-menu-item-mobile"><a href="./generator.html" class="dropdown-menu-link-mobile">Генератори</a></li>
+                                <li class="dropdown-menu-item-mobile"><a href="./boiler.html" class="dropdown-menu-link-mobile">Бойлери</a></li>
+                    </ul>
+                    <ul class="mobile-menu-mobile">
+                    </li>
+                    <li class="menu-item-mobile">
+                        <a class="menu-item-link-mobile" href="./aboutPage.html">ПРО НАС</a>
+                    </li>
+                    <li class="menu-item-mobile">
+                        <a class="menu-item-link-mobile" href="./contactPage.html">КОНТАКТИ</a>
+                    </li>
+                    <li class="menu-item-mobile">  
+                        <a class="menu-item-link-mobile" href="./paymentPage.html">ОПЛАТА ТА ДОСТАВКА</a>
+                    </li>
+                    </ul>
+
+                </nav>
+                <ul class="contact-list">
+
+                    <li class="contact-item">
+                        
+                         <svg class="icon-contact-logo icon-phone">
+                            <use href="images/sprite.svg#icon-phone"></use>
+                        </svg>
+                    <a href="tel:+380442322036" class="mobile-contact-link">+38(044)232-20-36</a></li>
+                    <li class="contact-item">
+                        <svg class="icon-contact-logo icon-phone">
+                            <use href="images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <a href="tel:+380680650128" class="mobile-contact-link">+38(068)065-01-28</a></li>
+                    <li class="contact-item">
+                        <svg class="icon-contact-logo icon-phone">
+                            <use href="images/sprite.svg#icon-phone"></use>
+                        </svg>
+                        <a href="tel:+380951036604" class="mobile-contact-link">+38(095)103-66-04</a></li>
+                        <li class="contact-item">
+                            <svg class="icon-contact-logo icon-phone">
+                                <use href="images/sprite.svg#icon-phone"></use>
+                            </svg>
+                            <a href="tel:+380951036604" class="mobile-contact-link">+38(095)103-66-04</a></li>
+                    
+
+                </ul>
+                <ul class="mobile-contact-list">
+
+                    <li class="contact-item">
+                        <svg class="icon-contact-logo icon-whatsap">
+                            <use href="images/sprite.svg#icon-whatsapp"></use>
+                        </svg>
+                        <a href="tel:+380951036604" class="mobile-contact-link">WhatsApp</a></li>
+                    <li class="contact-item">
+                        <svg class="icon-contact-logo icon-viber">
+                            <use href="images/sprite.svg#icon-viber"></use>
+                        </svg>
+                        <a href="tel:+380680650128" class="mobile-contact-link">Viber</a></li>
+                    <li class="contact-item">
+                        <svg class="icon-contact-logo icon-telegram">
+                            <use href="images/sprite.svg#icon-telegram"></use>
+                        </svg>
+                        <a href="t/me/@sho_treba" class="mobile-contact-link">t/me/@sho_treba</a></li>
+                    <li class="contact-item">
+                        <svg class="icon-contact-logo icon-envelope">
+                            <use href="images/sprite.svg#icon-envelope"></use>
+                        </svg>
+                        <a href="mailto:sales@sho-treba.com.ua" class="mobile-contact-link">sales@sho-treba.com.ua</a></li>
+
+                </ul>
+              
+                </div>
+            <div class="notification">
+                <p class="notification-text"></p>
+            </div>
+            <div class="backdrop">
+                <div class="modal">
+                    <h2 class="empty-cart">Ваша корзина порожня</h2>
+                    <div class="cart-list-wrapper">
+                    <ul class="cart-list">
+                    </ul>
+                    </div>
+                    <p class="cart-total-price">Всього: <span class="cart-total-price-value">14999₴</span></p>
+
+                    <div class="actions-button-wrapper">
+                        <button class="order-button">
+                            ЗАМОВИТИ
+                        </button>
+                        <button class="clear-button">
+                            ОЧИСТИТИ КОРЗИНУ
+                        </button>
+                    </div>
+
+                    <button class="close-modal-btn">&#x2717</button>
+                </div>
+
+            </div>
+
+            <!-- MODAL_ORDER_FORM -->
+            <div class="backdrop-order">
+                <div class="modal-order">
+                    <form class="order-form">
+              <div class="inputs-wrapper">
+                <div class="input-order-wrapper">
+                    <lable for="name" class="order-lable">Імʼя</lable>
+                    <input autocomplete="off" name="name" id="name" placeholder="Петро" type="text" class="order-input">
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <div class="input-order-wrapper">
+                    <lable for="surname" class="order-lable">Прізвище</lable>
+                    <input autocomplete="off" name="surename" id="surname" placeholder="Бондаренко" type="text" class="order-input">  
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <div class="input-order-wrapper">
+                    <lable for="tel" class="order-lable">Телефон</lable>
+                    <input autocomplete="off" name="tel" id="tel" placeholder="+380555555555" type="text" class="order-input">
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <div class="input-order-wrapper">
+                    <lable for="email" class="order-lable">Пошта</lable>
+                    <input autocomplete="off" name="email" id="email" placeholder="exemple@gmail.com" type="text" class="order-input"> 
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <fieldset class="radio-wrapper">
+                    <legend class="radio-wrapper-title">Доставка</legend>
+                    <div class="input-order-radio-wrapper">
+                        <div class="delivery-input-radio-wrapper">
+                            <input name="delivery" class="order-input-radio" type="radio" id="dep" checked>
+                            <label for="dep" class="order-lable">Доставка у відділення Нової Пошти</label>
+                        </div>
+                    <div class="delivery-wrapper-dept">
+                        <!-- <div class="deliv-input-wrapper">
+                            <input class="delive-input" placeholder="Введіть населенний пункт" name="city" type="text" type="text">
+                            <p class="error">* Обовʼязкове поле</p>
+                        </div>
+                        <div class="deliv-input-wrapper">
+                            <input class="delive-input" placeholder="Введіть номер відділення" name="department" type="text" type="text">
+                            <p class="error">* Обовʼязкове поле</p>
+                        </div> -->
+
+                        <div class="location-input-wrapper">
+                            <input name="city" type="text" class="location" placeholder="Введіть населенний пукт">
+                            <ul class="locations"></ul>
+                        </div>
+
+                        <div class="deliv-input-wrapper">
+                            <input name="department" type="text" class="delive-input" placeholder="Введіть номер або адресу відділення">
+                            <ul class="addresses"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-order-radio-wrapper">
+                    <div class="delivery-input-radio-wrapper">
+                        <input name="delivery" class="order-input-radio" type="radio" id="del">
+                        <label for="del" class="order-lable">Курʼєрська доставка Нової Пошти</label>
+                        </div>
+                    <div class="delivery-wrapper-courier">
+                        <input name="address" type="text" class="delive-input" placeholder="Введіть точну адресу доставки замлення">
+                        <p class="error">* Обовʼязкове поле</p>
+                    </div>
+                        
+                </div>
+                </fieldset>
+              </div>
+                    <button class="order-submit-btn disabled" type="submit">Оформити</button>
+                    </form>
+                    <div class="order-list-wrapper">
+                        <ul class="order-list">
+
+                        </ul>
+                        <p class="order-total-price">Всього: <span class="order-total-price-value">14999</span></p>
+                    </div>
+                    <div class="order-notif-wrapper">
+                        <div>
+                            <p class="order-notification">Ваше замовлення №6666 оформлено!</p>
+                            <p class="order-notification">Наш менеджер звʼяжеться з вами!</p>
+                        </div>
+                        <button type="button" class="ok-btn">Зрозуміло</button>
+                    </div>
+                </div>
+                </div>
+
+             <!-- MODAL_ORDER_FORM -->
+
+
+
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-image-wrapper">
+                        <div class="good-of-day-wrapper">
+                            <a href="./goodday.html" class="day-link">
+                                <img
+                                    class="good-of-day"
+                                    width="190"
+                                    height="190"
+                                    src="./images/Fjord-cond.jpg"
+                                    alt="конндиціонер Bergen Fjord"
+                                />
+                                <h2 class="day-title-model">
+                                    Інверторний кондиціонер
+                                    <span class="day-title-model-name"
+                                        >Bergen BEI09FRD/BEO09FRD</span
+                                    >
+                                </h2>
+                                <p class="day-price">15999₴</p>
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <ul class="slider-list">
+                                <li class="slider-item">
+                                    <img
+                                    class="slider-image"
+                                    height="270"
+                                    src="./images/sky1.jpg"
+                                    alt="небо"
+                                />
+                                </li>
+                                <li class="slider-item">
+                                    <img
+                                    class="slider-image"
+                                    height="270"
+                                    src="./images/sky2.jpg"
+                                    alt="небо"
+                                />
+                                </li>
+                                <li class="slider-item">
+                                    <img
+                                    class="slider-image"
+                                    height="270"
+                                    src="./images/sky3.jpg"
+                                    alt="небо"
+                                />
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+            </section>
+            <section class="payment-delivery-section">
+                <div class="container delivery-text-wrapper">
+                    <h1 class="delivery-text-title">Умови оплати та доставки продукції</h1>
+                    <h2 class="delivery-text-subtitle">Доставка:</h2>
+                    <ul class="delivery-list">
+                        <li class="delivery-item">
+                            <p class="delivery-text">Доставка кур'єром в межах Києва - 125 грн. Замовлення від 5000 грн. доставляються безкоштовно.</p>
+                        </li>
+                        <li class="delivery-item">
+                            <p class="delivery-text">Доставка до складу Нової Пошти по Україні - 125 грн. Замовлення від 5000 грн. -доставляються безкоштовно протягом 1-3 робочих днів.
+                            </p>
+                        </li>
+                        <li class="delivery-item">
+                            <p class="delivery-text">Доставка кур'єром Нової Пошти по Україні - 250 грн. Замовлення від 10000 грн. доставляються безкоштовно протягом 1-5 робочих днів.
+                            </p>
+                        </li>
+                        <li class="delivery-item">
+                            <p class="delivery-text">Доставки вантажів вагою понад 100 кг. - розраховується індивідуально.
+                            </p>
+                        </li>
+                        <li class="delivery-item">
+                            <p class="delivery-text">Доставка кур'єром здійснюється "до під'їзду". Доступна опція «підйом на поверх» за умови погодження зі службою доставки та додаткову плату (За наявності ліфта -  100грн; без ліфта - 40 грн/поверх).
+                            </p>
+                        </li>
+                    </ul>
+
+                
+                    <h2 class="delivery-text-subtitle">Оплата:</h2>
+                    <h3 class="payment-text-subsubtitle">Оплата частинами від Приватбанк
+                    </h3>
+                    <p class="payment-subsubtitle-text">"Оплата частинами" або "Миттєва розстрочка" доступні при умові наявності карти Приватбанку “Універсальна” із кредитним лімітом, що дорівнює або більше суми бажаної покупки. Комісія Приватбанку за послугу "Оплата частинами" становить 0,01%/місяць (при використанні особистих коштів).  Строк даної послуги становить 1 — 6 місяців.
+                    Щоб дізнатися доступний для вас ліміт: відправити смс з текстом "Chast" на номер 10060 або зателефонувати на номер 3700 і уточнити у оператора контакт-центру Приватбанку.</p>
+                    <h3 class="payment-text-subsubtitle">Миттєва розстрочка від Приватбанк
+                    </h3>
+                    <p class="payment-subsubtitle-text">"Оплата частинами" або "Миттєва розстрочка" доступні при умові наявності карти Приватбанку “Універсальна” із кредитним лімітом, що дорівнює або більше суми бажаної покупки. Комісія Приватбанку за послугу "Оплата частинами" становить 2,9%/місяць (при використанні особистих коштів) або 4,0%/місяць (при використанні кредитних коштів).  Строк даної послуги становить 1 — 24 місяці.</p>
+                    <p class="payment-subsubtitle-text">Щоб дізнатися доступний для вас ліміт: відправити смс з текстом "Chast" на номер 10060 або зателефонувати на номер 3700 і уточнити у оператора контакт-центру Приватбанку.
+                    </p>
+                    <ul class="delivery-list">
+                        <li class="delivery-item">Готівкою при отриманні товару (наложений платіж 2% + 20 грн);</li>
+                        <li class="delivery-item">Приват24;</li>
+                        <li class="delivery-item">Visa/MasterCard;</li>
+                        <li class="delivery-item">ApplePay, Google Pay, Pay Pass при отриманні товару;</li>
+                        <li class="delivery-item">Безготівковий розрахунок (з ПДВ).</li>
+                    </ul>
+                    <h2 class="delivery-text-subtitle">Прийом і повернення товару:</h2>
+                    <p class="payment-subsubtitle-text">Уважно оглядайте товар при отриманні за присутності  кур'єра. Ви можете замінити чи повернути замовлення, якщо вам не подобається візуальний вигляд або пакування товару пошкоджено. Претензії щодо зовнішнього вигляду приймаються тільки в момент доставки.</p>
+
+                    <h2 class="delivery-text-subtitle">Повернення товару:</h2>
+                    <p class="payment-subsubtitle-text">Ми дотримуємося вимог закону "Про захист прав споживачів" у повній мірі.
+                        Повернення товару можливе протягом 14 днів з моменту покупки, за умови, що товар не використовувався, пакування та сам товар збережено без пошкоджень.</p>
+                    <p class="payment-subsubtitle-text">При необхідності повернення товару Вам необхідно надати:</p>
+                    <ul class="delivery-list">
+                        <li class="delivery-item">товар у повній комплектації та без пошкоджень (товар, упаковка, цілісність пломб);</li>
+                        <li class="delivery-item">видаткову накладну або касовий чек;</li>
+                        <li class="delivery-item">гарантійний талон;</li>
+                        <li class="delivery-item">заяву на повернення;</li>
+                        <li class="delivery-item">паспорт та ідентифікаційний код.</li>
+                    </ul>
+                    <p class="payment-subsubtitle-text text-small">Процес повернення коштів відбувається виходячи із вартості товару на момент його покупки та протягом 14 днів з моменту звернення.</p>
+                
+
+
+                    </div>
+        
+            </section>
+                 </main>
+        <footer>
+            <div class="container">
+                <a href="/" class="logo">
+                    <svg class="footer-icon-logo-sho">menu-item-link
+                        <use href="images/sprite.svg#icon--3"></use>
+                    </svg>
+                </a>
+                <nav class="navigation footer-navigation">
+                    <h2 class="foopter-nav-title">ТОВАРИ</h2>
+                    <ul class="main-menu main-menu-footer">
+                        <li class="menu-item"><a class="footer-menu-link" href="./cond.html">Кондиціонери</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./conv.html">Конвектори</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./electrostation.html">Зарядні станції</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./boiler.html">Бойлери</a></li>
+                    </ul>
+                </nav>
+                <nav class="navigation footer-navigation">
+                    <h2 class="foopter-nav-title">ІНФОРМАЦІЯ</h2>
+                    <ul class="info-menu-footer">
+                        <li class="menu-item"><a class="footer-menu-link" href="./aboutPage.html">Про нас</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./paymentPage.html">Оплата і доставка</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./manuals.html">Мануали</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./service.html">Сервісні центри</a></li>
+                       
+                    </ul>
+                </nav>
+                <div class="contact-footer-wrapper">
+                    <h2 class="contact-footer-title"></h2>                        <ul class="contact-list">
+
+                            <li class="contact-item">
+                                 <svg class="icon-contact-logo icon-phone">menu-item-link
+                                    <use href="images/sprite.svg#icon-phone"></use>
+                                </svg>
+                            <a href="tel:+380442322036" class="contact-link">+38(044)232-20-36</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-phone">menu-item-link
+                                    <use href="images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <a href="tel:+380680650128" class="contact-link">+38(068)065-01-28</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-phone">menu-item-link
+                                    <use href="images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <a href="tel:+380951036604" class="contact-link">+38(095)103-66-04</a></li>
+                                <li class="contact-item">
+                                    <svg class="icon-contact-logo icon-phone">menu-item-link
+                                        <use href="images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <a href="tel:+380951036604" class="contact-link">+38(095)103-66-04</a></li>
+                            
+
+                        </ul>
+                </div>
+                <div class="contact-footer-wrapper">
+                    <h2 class="contact-footer-title"></h2>                        <ul class="contact-list">
+
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-whatsap">menu-item-link
+                                    <use href="images/sprite.svg#icon-whatsapp"></use>
+                                </svg>
+                                <a href="tel:+380951036604" class="contact-link">WhatsApp</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-viber">menu-item-link
+                                    <use href="images/sprite.svg#icon-viber"></use>
+                                </svg>
+                                <a href="tel:+380680650128" class="contact-link">Viber</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-telegram">menu-item-link
+                                    <use href="images/sprite.svg#icon-telegram"></use>
+                                </svg>
+                                <a href="t/me/@sho_treba" class="contact-link">t/me/@sho_treba</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-envelope">menu-item-link
+                                    <use href="images/sprite.svg#icon-envelope"></use>
+                                </svg>
+                                <a href="mailto:sales@sho-treba.com.ua" class="contact-link">sales@sho-treba.com.ua</a></li>
+
+                        </ul>
+                </div>
+             
+                <!-- <button class="cart-button">
+                    <svg class="cart-icon" width="24" , height="24">
+                        <use href="images/sprite.svg#icon-cart"></use>
+                    </svg>
+                </button> -->
+            </div>
+        </footer>
+        <!-- <script src="./index.js" type="module"></script> -->
+        <script src="./JS/modal.js" type="module"></script>
+        <script src="./JS/modalorder.js" type="module"></script>
+        <script src="./JS/slider.js" type="module"></script>
+        <script src="./JS/form.js" type="module"></script>
+       
+        <script src="./JS/mobile-menu.js" type="module"></script>
+
+
+
+    </body>
+</html>
+

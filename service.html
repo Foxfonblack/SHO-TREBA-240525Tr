@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ua">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+            integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>SHO-TREBA</title>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+              
+                <a href="./index.html" class="">
+                    <svg class="icon-logo-sho">menu-item-link
+                        <use href="images/sprite.svg#icon--3"></use>
+                    </svg>
+                    
+                </a>
+                <nav class="navigation">
+                    <ul class="main-menu">
+                        <li class="menu-item dropdown"><span class="menu-item-link menu-item-link-span">ТОВАРИ</span>
+                            <ul class="dropdown-menu">
+                                <li class="dropdown-menu-item"><a href="./cond.html" class="dropdown-menu-link">Кондиціонери</a></li>
+                                <li class="dropdown-menu-item"><a href="./conv.html" class="dropdown-menu-link">Конвектори</a></li>
+                                <li class="dropdown-menu-item"><a href="./electrostation.html" class="dropdown-menu-link">Зарядні станціі</a></li>
+                                <li class="dropdown-menu-item"><a href="./generator.html" class="dropdown-menu-link">Генератори</a></li>
+                                <li class="dropdown-menu-item"><a href="./boiler.html" class="dropdown-menu-link">Бойлери</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="./aboutPage.html">ПРО НАС</a>
+                        </li>
+                        <li class="menu-item">
+                            <a class="menu-item-link" href="./contactPage.html">КОНТАКТИ</a>
+                        </li>
+                        <li class="menu-item">  
+                            <a class="menu-item-link" href="./paymentPage.html">ОПЛАТА ТА ДОСТАВКА</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="cart-button">
+                    <span class="cart-inner-counter">0</span>
+                    <svg class="cart-icon" width="24" , height="24">
+                        <use href="images/sprite.svg#icon-cart"></use>
+                    </svg>
+                </button>
+                <button type="button" class="contact-us">
+                    <svg class="contact-us-icon" width="32" , height="32">
+                        <use href="images/sprite.svg#icon-phone"></use>
+                    </svg>
+                </button>
+                <form class="contact-us-form">
+                    <div class="contact-form-inputs-wrapper">
+                        <div class="contact-us-input-wrapper">
+                            <input type="text" placeholder="Імʼя" name="name" class="contact-us-name-input">
+                            <p class="error-contact-us">* Обовʼязкове поле</p>
+                        </div>
+                        <div class="contact-us-input-wrapper">
+                            <input type="text" placeholder="Телефон" name="phone" class="contact-us-phone-input">
+                            <p class="error-contact-us">* Обовʼязкове поле</p>
+                        </div>
+                        <textarea class="contact-us-textarea" name="question" id="" placeholder="Ваше питання"></textarea>
+                    </div>
+                    <button class="contact-us-submite-btn disabled" type="submit">Передзвонити</button>
+                    <button type="button" class="contact-us-form-close-btn">&#x2717</button>
+                </form>
+            </div>
+        </header>
+
+        <main>
+            <div class="notification">
+                <p class="notification-text"></p>
+            </div>
+            <div class="backdrop">
+                <div class="modal">
+                    <h1 class="empty-cart">Ваша корзина порожня</h1>
+                    <div class="cart-list-wrapper">
+                    <ul class="cart-list">
+                    </ul>
+                    </div>
+                    <p class="cart-total-price">Всього: <span class="cart-total-price-value">14999₴</span></p>
+
+                    <div class="actions-button-wrapper">
+                        <button class="order-button">
+                            ЗАМОВИТИ
+                        </button>
+                        <button class="clear-button">
+                            ОЧИСТИТИ КОРЗИНУ
+                        </button>
+                    </div>
+
+                    <button class="close-modal-btn">&#x2717</button>
+                </div>
+
+            </div>
+
+            <!-- MODAL_ORDER_FORM -->
+            <div class="backdrop-order">
+                <div class="modal-order">
+                    <form class="order-form">
+              <div class="inputs-wrapper">
+                <div class="input-order-wrapper">
+                    <lable for="name" class="order-lable">Імʼя</lable>
+                    <input autocomplete="off" name="name" id="name" placeholder="Петро" type="text" class="order-input">
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <div class="input-order-wrapper">
+                    <lable for="surname" class="order-lable">Прізвище</lable>
+                    <input autocomplete="off" name="surename" id="surname" placeholder="Бондаренко" type="text" class="order-input">  
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <div class="input-order-wrapper">
+                    <lable for="tel" class="order-lable">Телефон</lable>
+                    <input autocomplete="off" name="tel" id="tel" placeholder="+380555555555" type="text" class="order-input">
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <div class="input-order-wrapper">
+                    <lable for="email" class="order-lable">Пошта</lable>
+                    <input autocomplete="off" name="email" id="email" placeholder="exemple@gmail.com" type="text" class="order-input"> 
+                    <p class="error">* Обовʼязкове поле</p>
+                </div>
+                <fieldset class="radio-wrapper">
+                    <legend class="radio-wrapper-title">Доставка</legend>
+                    <div class="input-order-radio-wrapper">
+                        <div class="delivery-input-radio-wrapper">
+                            <input name="delivery" class="order-input-radio" type="radio" id="dep" checked>
+                            <label for="dep" class="order-lable">Доставка у відділення Нової Пошти</label>
+                        </div>
+                    <div class="delivery-wrapper-dept">
+                        <!-- <div class="deliv-input-wrapper">
+                            <input class="delive-input" placeholder="Введіть населенний пункт" name="city" type="text" type="text">
+                            <p class="error">* Обовʼязкове поле</p>
+                        </div>
+                        <div class="deliv-input-wrapper">
+                            <input class="delive-input" placeholder="Введіть номер відділення" name="department" type="text" type="text">
+                            <p class="error">* Обовʼязкове поле</p>
+                        </div> -->
+
+                        <div class="location-input-wrapper">
+                            <input name="city" type="text" class="location" placeholder="Введіть населенний пукт">
+                            <ul class="locations"></ul>
+                        </div>
+
+                        <div class="deliv-input-wrapper">
+                            <input name="department" type="text" class="delive-input" placeholder="Введіть номер або адресу відділення">
+                            <ul class="addresses"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-order-radio-wrapper">
+                    <div class="delivery-input-radio-wrapper">
+                        <input name="delivery" class="order-input-radio" type="radio" id="del">
+                        <label for="del" class="order-lable">Курʼєрська доставка Нової Пошти</label>
+                        </div>
+                    <div class="delivery-wrapper-courier">
+                        <input name="address" type="text" class="delive-input" placeholder="Введіть точну адресу доставки замлення">
+                        <p class="error">* Обовʼязкове поле</p>
+                    </div>
+                        
+                </div>
+                </fieldset>
+              </div>
+                    <button class="order-submit-btn disabled" type="submit">Оформити</button>
+                    </form>
+                    <div class="order-list-wrapper">
+                        <ul class="order-list">
+
+                        </ul>
+                        <p class="order-total-price">Всього: <span class="order-total-price-value">14999</span></p>
+                    </div>
+                    <div class="order-notif-wrapper">
+                        <div>
+                            <p class="order-notification">Ваше замовлення №6666 оформлено!</p>
+                            <p class="order-notification">Наш менеджер звʼяжеться з вами!</p>
+                        </div>
+                        <button type="button" class="ok-btn">Зрозуміло</button>
+                    </div>
+                </div>
+                </div>
+
+             <!-- MODAL_ORDER_FORM -->
+
+
+
+            <section class="hero">
+                <div class="container">
+                    <div class="hero-image-wrapper">
+                        <div class="good-of-day-wrapper">
+                            <a href="./goodday.html" class="day-link">
+                                <img
+                                    class="good-of-day"
+                                    width="190"
+                                    height="190"
+                                    src="./images/Fjord-cond.jpg"
+                                    alt="конндиціонер Bergen Fjord"
+                                />
+                                <h2 class="day-title-model">
+                                    Інверторний кондиціонер
+                                    <span class="day-title-model-name"
+                                        >Bergen BEI09FRD/BEO09FRD</span
+                                    >
+                                </h2>
+                                <p class="day-price">15999₴</p>
+                            </a>
+                        </div>
+                        <div class="slider">
+                            <ul class="slider-list">
+                                <li class="slider-item">
+                                    <img
+                                    class="slider-image"
+                                    height="270"
+                                    src="./images/sky1.jpg"
+                                    alt="небо"
+                                />
+                                </li>
+                                <li class="slider-item">
+                                    <img
+                                    class="slider-image"
+                                    height="270"
+                                    src="./images/sky2.jpg"
+                                    alt="небо"
+                                />
+                                </li>
+                                <li class="slider-item">
+                                    <img
+                                    class="slider-image"
+                                    height="270"
+                                    src="./images/sky3.jpg"
+                                    alt="небо"
+                                />
+                                </li>
+                              
+                            </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+            </section>
+            <div class="about-text-wrapper">
+                <h2 class="about-text">
+                    Портал ШО-ТРЕБА являє собою сучасний інструмент підбору побутової та промислової техніки. Наша мета забезпечити максимально швидкий та комфортний процес придбання продукції світових брендів. Всі товари представлені на нашому ресурсі відповідають сучасним стандартам якості та енергоефективності. Ми пропонуємо широкий асортимент продукції від провідних виробників, щоб кожен клієнт міг знайти оптимальне рішення для своїх потреб. Завдяки простому інтерфейсу та зручній навігації ви зможете легко порівняти різні моделі та зробити обґрунтований вибір.
+                    
+                    Ми розуміємо, наскільки важливо забезпечити надійність та безпеку при покупці техніки, тому пропонуємо тільки перевірені та сертифіковані товари з гарантією якості. Окрім того, наші спеціалісти завжди готові надати професійну консультацію, допомогти з вибором та відповісти на всі ваші питання. Ми прагнемо, щоб покупка техніки на порталі ШО-ТРЕБА була простою та приємною.</h2>    
+            </div>
+           
+        </main>
+        <footer>
+            <div class="container">
+                <a href="/" class="logo">
+                    <svg class="footer-icon-logo-sho">menu-item-link
+                        <use href="images/sprite.svg#icon--3"></use>
+                    </svg>
+                </a>
+                <nav class="navigation footer-navigation">
+                    <h2 class="foopter-nav-title">ТОВАРИ</h2>
+                    <ul class="main-menu main-menu-footer">
+                        <li class="menu-item"><a class="footer-menu-link" href="./cond.html">Кондиціонери</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./conv.html">Конвектори</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./electrostation.html">Зарядні станції</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./boiler.html">Бойлери</a></li>
+                    </ul>
+                </nav>
+                <nav class="navigation footer-navigation">
+                    <h2 class="foopter-nav-title">ІНФОРМАЦІЯ</h2>
+                    <ul class="info-menu-footer">
+                        <li class="menu-item"><a class="footer-menu-link" href="./aboutPage.html">Про нас</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./paymentPage.html">Оплата і доставка</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./manuals.html">Мануали</a></li>
+                        <li class="menu-item"><a class="footer-menu-link" href="./service.html">Сервісні центри</a></li>
+                       
+                    </ul>
+                </nav>
+                <div class="contact-footer-wrapper">
+                    <h2 class="contact-footer-title"></h2>                        <ul class="contact-list">
+
+                            <li class="contact-item">
+                                 <svg class="icon-contact-logo icon-phone">menu-item-link
+                                    <use href="images/sprite.svg#icon-phone"></use>
+                                </svg>
+                            <a href="tel:+380442322036" class="contact-link">+38(044)232-20-36</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-phone">menu-item-link
+                                    <use href="images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <a href="tel:+380680650128" class="contact-link">+38(068)065-01-28</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-phone">menu-item-link
+                                    <use href="images/sprite.svg#icon-phone"></use>
+                                </svg>
+                                <a href="tel:+380951036604" class="contact-link">+38(095)103-66-04</a></li>
+                                <li class="contact-item">
+                                    <svg class="icon-contact-logo icon-phone">menu-item-link
+                                        <use href="images/sprite.svg#icon-phone"></use>
+                                    </svg>
+                                    <a href="tel:+380951036604" class="contact-link">+38(095)103-66-04</a></li>
+                            
+
+                        </ul>
+                </div>
+                <div class="contact-footer-wrapper">
+                    <h2 class="contact-footer-title"></h2>                        <ul class="contact-list">
+
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-whatsap">menu-item-link
+                                    <use href="images/sprite.svg#icon-whatsapp"></use>
+                                </svg>
+                                <a href="tel:+380951036604" class="contact-link">WhatsApp</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-viber">menu-item-link
+                                    <use href="images/sprite.svg#icon-viber"></use>
+                                </svg>
+                                <a href="tel:+380680650128" class="contact-link">Viber</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-telegram">menu-item-link
+                                    <use href="images/sprite.svg#icon-telegram"></use>
+                                </svg>
+                                <a href="t/me/@sho_treba" class="contact-link">t/me/@sho_treba</a></li>
+                            <li class="contact-item">
+                                <svg class="icon-contact-logo icon-envelope">menu-item-link
+                                    <use href="images/sprite.svg#icon-envelope"></use>
+                                </svg>
+                                <a href="mailto:sales@sho-treba.com.ua" class="contact-link">sales@sho-treba.com.ua</a></li>
+
+                        </ul>
+                </div>
+             
+                <!-- <button class="cart-button">
+                    <svg class="cart-icon" width="24" , height="24">
+                        <use href="images/sprite.svg#icon-cart"></use>
+                    </svg>
+                </button> -->
+            </div>
+        </footer>
+        <!-- <script src="./index.js" type="module"></script> -->
+        <script src="./JS/modal.js" type="module"></script>
+        <script src="./JS/modalorder.js" type="module"></script>
+        <script src="./JS/slider.js" type="module"></script>
+        <script src="./JS/form.js" type="module"></script>
+
+
+
+    </body>
+</html>
+

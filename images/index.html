@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="data-input">
+            <textarea
+                style="width: 400px; height: 15px"
+                class="input-1"
+                placeholder="Введите первое число"
+            ></textarea>
+            <ul class="items-list">
+                <li class="item">www</li>
+                <li class="item">ddd</li>
+                <li class="item">fff</li>
+                <li class="item">ggg</li>
+                <li class="item">bbb</li>
+            </ul>
+
+            <textarea
+                style="width: 400px; height: 15px"
+                class="input-2"
+                placeholder="Введите второе число"
+            ></textarea>
+            <textarea
+                style="width: 400px; height: 15px"
+                class="input-3"
+                placeholder="Результат"
+                readonly
+            ></textarea>
+        </div>
+        <div class="bttn">
+            <button class="button" onclick="calculateDifference()">
+                Вычислить разницу
+            </button>
+        </div>
+
+        <!-- <script>
+            function calculateDifference() {
+                // Получаем значения из input-1 и input-2, используя BigInt для работы с большими целыми числами
+                try {
+                    const input1 = BigInt(
+                        document.querySelector(".input-1").value
+                    );
+                    const input2 = BigInt(
+                        document.querySelector(".input-2").value
+                    );
+
+                    // Вычисляем разницу
+                    const result = input1 - input2;
+
+                    // Записываем результат в input-3, конвертируя его в строку
+                    document.querySelector(".input-3").value =
+                        result.toString();
+                } catch (error) {
+                    alert(
+                        "Введите только целые числа без пробелов или специальных символов."
+                    );
+                }
+            }
+        </script> -->
+
+        <script src="./index.js" type="module"></script>
+    </body>
+</html>
