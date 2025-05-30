@@ -14,6 +14,7 @@ const contacUsNotifWrapper = document.querySelector(
   ".contact-us-notif-wrapper"
 );
 const contactUsSubmitBtn = document.querySelector(".contact-us-submite-btn");
+const contactUsOkBtn = document.querySelector(".contact-us-ok-btn");
 contactUsFormCloseBtn.addEventListener("click", onClosecontactUsButtonClick);
 
 contactUsForm.addEventListener("submit", onContactUsFormSubmit);
@@ -70,6 +71,10 @@ function handleContactUsFormSubmit(event) {
   message += `Телефон: ${form.phone.value}\n`;
   message += `Питання: ${form.question.value}\n`;
 
+  contacUsNotifWrapper.classList.add("show-notification");
+  form.reset();
+  contactUsSubmitBtn.classList.add("disabled");
+
   const data = JSON.stringify({
     chat_id: CHAT_ID,
     parse_model: "html",
@@ -86,4 +91,11 @@ function handleContactUsFormSubmit(event) {
   }).catch((error) => {
     console.log(error.message);
   });
+}
+
+contactUsOkBtn.addEventListener("click", onContactUsOkBtnClick);
+
+function onContactUsOkBtnClick() {
+  contacUsNotifWrapper.classList.remove("show-notification");
+  contacUsNotifWrapper.classList.add("hide-notification");
 }
