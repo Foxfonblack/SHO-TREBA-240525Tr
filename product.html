@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="ua">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-            integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <link rel="stylesheet" href="./css/style.css" />
-        <title>SHO-TREBA</title>
-    </head>
-    <body>
-        <div class="contact-us-notif-wrapper">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title data-title>SHO-TREBA</title>
+  </head>
+  <body>
+  <div class="contact-us-notif-wrapper">
             <div>
                 <p class="order-notification">Наш менеджер звʼяжеться з вами найближчим часом!</p>
             </div>
             <button type="button" class="contact-us-ok-btn">Зрозуміло</button>
         </div>
         <header>
+          
             <div class="container">
                 <button class="mobile-menu-button">
                     <svg class="mobile-burger-menu-icon">
                         <use href="./images/sprite.svg#icon-menu-mobile"></use>
                     </svg>         
                 </button>
+              
                 <a href="./index.html" class="">
                     <svg class="icon-logo-sho">menu-item-link
                         <use href="images/sprite.svg#icon--3"></use>
@@ -84,8 +86,8 @@
             </div>
         </header>
 
-        <main>
-            <div class="mobile-menu-burger hidden">
+    <main>
+ <div class="mobile-menu-burger hidden">
                 <nav class="navigation-mobile">
                     <h2 class="menu-title-mobile dropdown-mobile">ТОВАРИ</h2>
                     <ul class="mobile-menu-list">     
@@ -251,7 +253,8 @@
                     </div>
                         
                 </div>
-                </fieldset>              </div>
+                </fieldset>
+              </div>
                     <button class="order-submit-btn disabled" type="submit">Оформити</button>
                     </form>
                     <div class="order-list-wrapper">
@@ -269,169 +272,59 @@
                     </div>
                 </div>
                 </div>
+      <section class="good-section" data-id-container>
 
-             <!-- MODAL_ORDER_FORM -->
-
-
-
-            <section class="hero">
-                <div class="container">
-                    <div class="hero-image-wrapper">
-                        <div class="good-of-day-wrapper">
-                            <a href="./goodday.html" class="day-link">
-                                <img
-                                    class="good-of-day"
-                                    width="190"
-                                    height="190"
-                                    src="./images/Fjord-cond.jpg"
-                                    alt="конндиціонер Bergen Fjord"
-                                />
-                                <h2 class="day-title-model">
-                                    Інверторний кондиціонер
-                                    <span class="day-title-model-name"
-                                        >Bergen BEI09FRD/BEO09FRD</span
-                                    >
-                                </h2>
-                                <p class="day-price">15999₴</p>
-                            </a>
-                        </div>
-                        <div class="slider">
-                            <ul class="slider-list">
-                                <li class="slider-item">
-                                    <img
-                                    class="slider-image"
-                                    height="270"
-                                    src="./images/sky1.jpg"
-                                    alt="небо"
-                                />
-                                </li>
-                                <li class="slider-item">
-                                    <img
-                                    class="slider-image"
-                                    height="270"
-                                    src="./images/sky2.jpg"
-                                    alt="небо"
-                                />
-                                </li>
-                                <li class="slider-item">
-                                    <img
-                                    class="slider-image"
-                                    height="270"
-                                    src="./images/sky3.jpg"
-                                    alt="небо"
-                                />
-                                </li>
-                         
-                            </ul>
-                        </div>
-                    </div>
-                  
-                </div>
-            </section>
-            <section class="goods">
-                 <div class = "bread-crumbs-product-wrapper">
-                    <nav class="bread-crumbs-category-list">
-                        <a href="./index.html">Головна</a>
-                        <span>/</span><span>Кондиціонери</span>
-                    </nav> 
-            </div> 
-                <div class="container">
+        <div class="container">
+          <nav data-breadcrumb class="bread-crumbs-product-list"></nav>
+          <div class="good-wrapper">
+             <div class="container-item-slider">
                    
-                    <ul class="goods-list">
-                      
-                    </ul>
-                    <div class="filter-calc">
-                        <h2 class="filter-available-title">Наявність:
-                        </h2>
-                        <form action="" class="available-form-js">
-                            <div class="input-wrapper">
-                                <div class="input-radio-wrapper">
-                                    <input checked type="radio" name="available" id="all" value="all" class="input">
-                                </div>
-                                <label for="all" class="lable">Всі</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="available" id="available" value="available" class="input">
-                                <label for="available" class="lable">Є у наявності</label>
-                            </div>
-                        </form>
-                        <h2 class="filter-square-title">Рекомендована площа приміщення, м<sup>2</sup>:
-                        </h2>
-                        <form action="" class="filter-form">
-                            <div class="input-wrapper">
-                                <input type="radio" name="square" id="square-20" value="20" class="input">
-                                <label for="square-20" class="lable">До 20 м<sup>2</sup></label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="square" id="square-25" value="25" class="input">
-                                <label for="square-25" class="lable">До 25 м<sup>2</sup></label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="square" id="square-35" value="35" class="input">
-                                <label for="square-35" class="lable">До 35 м<sup>2</sup></label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="square" id="square-52" value="52" class="input">
-                                <label for="square-52" class="lable">До 52 м<sup>2</sup></label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="square" id="square-70" value="70" class="input">
-                                <label for="square-70" class="lable">До 70 м<sup>2</sup></label>
-                            </div>
-                         <button type="submit" class ="clear-filter">Очистити фільтр</button>
-                        </form>
-                        <h2 class="filter-power-title">Потужність, БТО/год:
-                        </h2>
-                        <form action="" class="filter-form power-form-js">
-                            <div class="input-wrapper">
-                                <input type="radio" name="power" id="power-7000" value="7000" class="input">
-                                <label for="power-7000" class="lable">7000</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="power" id="power-9000" value="9000" class="input">
-                                <label for="power-9000" class="lable">9000</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="power" id="power-11450" value="11450" class="input">
-                                <label for="power-11450" class="lable">11450</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="power" id="power-18000" value="18000" class="input">
-                                <label for="power-18000" class="lable">18000</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="power" id="power-24000" value="24000" class="input">
-                                <label for="power-24000" class="lable">24000</label>
-                            </div>
-                         <button type="submit" class ="clear-filter">Очистити фільтр</button>
-                        </form>
-                         <h2 class="filter-manufacture-title">Виробник:
-                        </h2>
-                        <form action="" class="manufacture-form-js">
-                             <div class="input-wrapper">
-                                <div class="input-radio-wrapper">
-                                    <input checked type="radio" name="manufacture" id="all" value="all" class="input">
-                                </div>
-                                <label for="all" class="lable">Всі</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <div class="input-radio-wrapper">
-                                    <input type="radio" name="manufacture" id="Bergen" value="Bergen" class="input">
-                                </div>
-                                <label for="Bergen" class="lable">Bergen</label>
-                            </div>
-                            <div class="input-wrapper">
-                                <input type="radio" name="manufacture" id="NC clima" value="NC clima" class="input">
-                                <label for="NC clima" class="lable">NC clima</label>
-                            </div>
-                        </form>
-                    </div>
+                    <button class="item-slider-prev-button slide-disable"><span class="arrow">&#9666</span></button>
+            <div class="good-img"  data-img-src style="width: 580px; height: 580px"></div>
+                   <button class="item-slider-next-button"><span class="arrow">&#9656</span></button>
+                   </div>
+            <div class="tables-wrapper">
+              <h1 class="good-title" data-name></h1>
+              <div class="available-wrapper">
+                <span class="good-available" data-available></span>
+                <span class="good-art" data-art></span>
+              </div>
+
+              <h2 class="table-capture">Загальні характеристики</h2>
+             <table>
+  <tbody data-general-body>
+  </tbody>
+</table>
+
+
+              <div class="price-wrapper">
+                <div class="price-info-wrapper">
+                  <span class="good-price" data-price>
                    
+                  </span>
                 </div>
-            </section>
-            
-        </main>
-        <footer>
+                <button class="item-button to-cart">ДО КОШИКА</button>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="tec-spec-table-capture">Технічні характеристики</h2>
+          <table class="tec-spec-table">
+            <tbody data-specs-body>
+
+            </tbody>
+          </table>
+
+
+          <h2 class="tec-spec-table-capture">Функції</h2>
+          <table class="tec-spec-table">
+            <tbody data-functions-body>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+ <footer>
             <div class="container">
                 <a href="/" class="logo">
                     <svg class="footer-icon-logo-sho">menu-item-link
@@ -458,7 +351,8 @@
                     </ul>
                 </nav>
                 <div class="contact-footer-wrapper">
-                    <h2 class="contact-footer-title"></h2>                        <ul class="contact-list">
+                    <h2 class="contact-footer-title"></h2>    
+                                        <ul class="contact-list">
 
                             <li class="contact-item">
                                  <svg class="icon-contact-logo icon-phone">menu-item-link
@@ -512,17 +406,12 @@
                 </div>
             </div>
         </footer>
-        <script src="./JS/cart.js" type="module"></script>
-        <script src="./JS/index-conv.js" type="module"></script>
-        <script src="./JS/modal.js" type="module"></script>
+    <script src="./JS/product.js" type="module"></script> 
         <script src="./JS/modalorder.js" type="module"></script>
-        <script src="./JS/slider.js" type="module"></script>
+        <script src="./JS/cart.js" type="module"></script>
         <script src="./JS/form.js" type="module"></script>
+        <script src="./JS/modal.js" type="module"></script>
         <script src="./JS/mobile-menu.js" type="module"></script>
-         <script src="./JS/tooltip.js" type="module"></script>
-        <script src="./JS/filter.js" type="module"></script>
-        
-
-    </body>
+         <script src="./JS/good-item-slider.js" type="module"></script>
+  </body>
 </html>
-

@@ -220,14 +220,6 @@
                             <label for="dep" class="order-lable">Доставка у відділення Нової Пошти</label>
                         </div>
                     <div class="delivery-wrapper-dept">
-                        <!-- <div class="deliv-input-wrapper">
-                            <input class="delive-input" placeholder="Введіть населенний пункт" name="city" type="text" type="text">
-                            <p class="error">* Обовʼязкове поле</p>
-                        </div>
-                        <div class="deliv-input-wrapper">
-                            <input class="delive-input" placeholder="Введіть номер відділення" name="department" type="text" type="text">
-                            <p class="error">* Обовʼязкове поле</p>
-                        </div> -->
 
                         <div class="location-input-wrapper">
                             <input name="city" type="text" class="location" placeholder="Введіть населенний пукт">
@@ -328,15 +320,16 @@
                   
                 </div>
             </section>
+           
             <section class="goods">
-                <div class="bread-crumbs-wrapper">
-                    <ul class="bread-crumbs-list">
-                        <li class="bread-crumbs-item"><a href="./index.html" class="bread-crumbs-item-link">Головна</a></li>
-                        <li class="bread-crumbs-item bread-crumb-second"><span>></span><p href="" class="bread-crumbs-item-text">Кондиціонери</p></li>
-                    </ul>
-                </div>
+            <div class = "bread-crumbs-product-wrapper">
+                    <nav class="bread-crumbs-category-list">
+                        <a href="./index.html">Головна</a>
+                        <span>/</span><span>Конвектори</span>
+                    </nav> 
+            </div>    
                 <div class="container">
-                   
+               
                     <ul class="goods-list">
                       
                     </ul>
@@ -405,7 +398,26 @@
                             </div>
                          <button type="submit" class ="clear-filter">Очистити фільтр</button>
                         </form>
-                        
+                         <h2 class="filter-manufacture-title">Виробник:
+                        </h2>
+                        <form action="" class="manufacture-form-js">
+                             <div class="input-wrapper">
+                                <div class="input-radio-wrapper">
+                                    <input checked type="radio" name="manufacture" id="all" value="all" class="input">
+                                </div>
+                                <label for="all" class="lable">Всі</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <div class="input-radio-wrapper">
+                                    <input type="radio" name="manufacture" id="Bergen" value="Bergen" class="input">
+                                </div>
+                                <label for="Bergen" class="lable">Bergen</label>
+                            </div>
+                            <div class="input-wrapper">
+                                <input type="radio" name="manufacture" id="NC clima" value="NC clima" class="input">
+                                <label for="NC clima" class="lable">NC clima</label>
+                            </div>
+                        </form>
                     </div>
                    
                 </div>
@@ -491,22 +503,17 @@
 
                         </ul>
                 </div>
-             
-                <!-- <button class="cart-button">
-                    <svg class="cart-icon" width="24" , height="24">
-                        <use href="images/sprite.svg#icon-cart"></use>
-                    </svg>
-                </button> -->
             </div>
         </footer>
         <script src="./JS/cart.js" type="module"></script>
-        <script src="./JS/index-conv.js" type="module"></script>
+        <!-- <script src="./JS/index-conv.js" type="module"></script> -->
         <script src="./JS/modal.js" type="module"></script>
         <script src="./JS/modalorder.js" type="module"></script>
         <script src="./JS/slider.js" type="module"></script>
         <script src="./JS/form.js" type="module"></script>
         <script src="./JS/mobile-menu.js" type="module"></script>
-
+         <script src="./JS/tooltip.js" type="module"></script>
+        <script src="./JS/filterConv.js" type="module"></script>
         
 
     </body>

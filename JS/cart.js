@@ -18,6 +18,13 @@ const cartInnerWrapper = document.querySelector(".cart-inner-counter")
 const addToCartPageBtn = document.querySelector(".item-button") ? document.querySelector(".item-button") : null
 const id = document.querySelector(".good-section")?.dataset.id ? document.querySelector(".good-section").dataset.id : null
 
+ const params = new URLSearchParams(window.location.search);
+  const idParam = params.get("id");
+
+  if (!idParam) {
+    console.warn("Не указан id товара в URL");
+  }
+
 
 
 export const cartArr = JSON.parse(localStorage.getItem("cartArr")) || [] 
@@ -222,14 +229,13 @@ export function onRemoveBtnClick(event){
         function onAddToCartClick(){
 
             const cartItemObject = bergenAirConditioners.find((item)=>{
-                return item.id === Number(id)
+                return item.id === Number(idParam)
             })
             if(cartArr.filter((item)=>{
                 return item.id===cartItemObject.id
             }).length
             )
             {
-                console.log("sdfbg");
             notificationText.textContent = "Цей товар вже у Вашому кошику"
             notification.classList.add("fixed")
             setTimeout(()=>{

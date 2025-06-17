@@ -71,6 +71,6 @@ function oncloseModalBtnClick() {
 }
 const mobileMenu = document.querySelector(".mobile-menu-burger");
 
-window.addEventListener("beforeunload", function (event) {
-    mobileMenu.classList.add("hidden");
-});
+// window.addEventListener("beforeunload", function (event) {
+//     mobileMenu.classList.add("hidden");
+// });
